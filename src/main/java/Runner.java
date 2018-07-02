@@ -39,6 +39,13 @@ public class Runner {
 
         List<Movies> miniMovies = DBMovies.getAll();
 
+        DBFootballer.deleteAll();
+        DBMovies.deleteAll();
+
+        List<Movies> noMovies = DBMovies.getAll();
+        List<Footballer> noFootballers = DBFootballer.getAll();
+
+
 
     }
 }
